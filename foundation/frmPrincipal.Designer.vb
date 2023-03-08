@@ -25,6 +25,7 @@ Partial Class frmPrincipal
         btnSalid = New Button()
         btnMensaje = New Button()
         Label1 = New Label()
+        btnAbrir = New Button()
         SuspendLayout()
         ' 
         ' btnSalid
@@ -53,11 +54,21 @@ Partial Class frmPrincipal
         Label1.Size = New Size(184, 20)
         Label1.TabIndex = 2
         Label1.Text = "Esta es una etiqueta nueva"' 
+        ' btnAbrir
+        ' 
+        btnAbrir.Location = New Point(151, 116)
+        btnAbrir.Name = "btnAbrir"
+        btnAbrir.Size = New Size(94, 29)
+        btnAbrir.TabIndex = 3
+        btnAbrir.Text = "Abrir"
+        btnAbrir.UseVisualStyleBackColor = True
+        ' 
         ' frmPrincipal
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(495, 181)
+        Controls.Add(btnAbrir)
         Controls.Add(Label1)
         Controls.Add(btnMensaje)
         Controls.Add(btnSalid)
@@ -71,4 +82,5 @@ Partial Class frmPrincipal
     Friend WithEvents btnSalid As Button
     Friend WithEvents btnMensaje As Button
     Friend WithEvents Label1 As Label
+    Friend WithEvents btnAbrir As Button
 End Class
