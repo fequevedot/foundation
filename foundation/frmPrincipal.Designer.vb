@@ -22,16 +22,29 @@ Partial Class frmPrincipal
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        btnSalid = New Button()
         SuspendLayout()
+        ' 
+        ' btnSalid
+        ' 
+        btnSalid.Location = New Point(351, 116)
+        btnSalid.Name = "btnSalid"
+        btnSalid.Size = New Size(94, 29)
+        btnSalid.TabIndex = 0
+        btnSalid.Text = "Salir"
+        btnSalid.UseVisualStyleBackColor = True
         ' 
         ' frmPrincipal
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(495, 181)
+        Controls.Add(btnSalid)
         Name = "frmPrincipal"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "Principal"
         ResumeLayout(False)
     End Sub
 
+    Friend WithEvents btnSalid As Button
 End Class
