@@ -22,16 +22,29 @@ Partial Class frmUsuarios
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        btnSalir = New Button()
         SuspendLayout()
+        ' 
+        ' btnSalir
+        ' 
+        btnSalir.Location = New Point(242, 154)
+        btnSalir.Name = "btnSalir"
+        btnSalir.Size = New Size(94, 29)
+        btnSalir.TabIndex = 0
+        btnSalir.Text = "Salir"
+        btnSalir.UseVisualStyleBackColor = True
         ' 
         ' frmUsuarios
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(679, 285)
+        ClientSize = New Size(373, 209)
+        Controls.Add(btnSalir)
         Name = "frmUsuarios"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Usuarios"
         ResumeLayout(False)
     End Sub
+
+    Friend WithEvents btnSalir As Button
 End Class
