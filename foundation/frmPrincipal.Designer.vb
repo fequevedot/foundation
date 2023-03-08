@@ -41,6 +41,7 @@ Partial Class frmPrincipal
         ClientSize = New Size(495, 181)
         Controls.Add(btnSalid)
         Name = "frmPrincipal"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "Principal"
         ResumeLayout(False)
     End Sub
