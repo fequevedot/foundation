@@ -24,6 +24,7 @@ Partial Class frmPrincipal
     Private Sub InitializeComponent()
         btnSalid = New Button()
         btnMensaje = New Button()
+        Label1 = New Label()
         SuspendLayout()
         ' 
         ' btnSalid
@@ -44,19 +45,30 @@ Partial Class frmPrincipal
         btnMensaje.Text = "Mensaje"
         btnMensaje.UseVisualStyleBackColor = True
         ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Location = New Point(23, 9)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(184, 20)
+        Label1.TabIndex = 2
+        Label1.Text = "Esta es una etiqueta nueva"' 
         ' frmPrincipal
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(495, 181)
+        Controls.Add(Label1)
         Controls.Add(btnMensaje)
         Controls.Add(btnSalid)
         Name = "frmPrincipal"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Principal"
         ResumeLayout(False)
+        PerformLayout()
     End Sub
 
     Friend WithEvents btnSalid As Button
     Friend WithEvents btnMensaje As Button
+    Friend WithEvents Label1 As Label
 End Class
